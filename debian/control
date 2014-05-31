@@ -2,20 +2,20 @@
 ## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
-Source: anon-apt-sources-tpo
+Source: anon-shared-build-apt-sources-tpo
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@riseup.net>
 Build-Depends: debhelper (>= 8), faketime, git
-Homepage: https://github.com/Whonix/anon-apt-sources-tpo
-Vcs-Browser: https://github.com/Whonix/anon-apt-sources-tpo
-Vcs-Git: https://github.com/Whonix/anon-apt-sources-tpo.git
+Homepage: https://github.com/Whonix/anon-shared-build-apt-sources-tpo
+Vcs-Browser: https://github.com/Whonix/anon-shared-build-apt-sources-tpo
+Vcs-Git: https://github.com/Whonix/anon-shared-build-apt-sources-tpo.git
 Standards-Version: 3.9.4
 
-Package: anon-apt-sources-tpo
+Package: anon-shared-build-apt-sources-tpo
 Architecture: all
 Depends: ${misc:Depends}
-Description: /etc/apt/sources.list.d/torproject.list for Anonymity Linux Distributions
+Description: Adds TPO's APT repository to Anonymity Linux Distributions during build
  Comes with "deb http://deb.torproject.org/torproject.org stable main", The Tor
  Project's APT signing key, and required chroot scripts.
  .

@@ -4,4 +4,4 @@
 
 version=3
 opts=filenamemangle=s/.+\/v?(.*)\.tar\.gz/<project>-$1.tar.gz/ \
-  https://github.com/Whonix/anon-apt-sources-tpo/tags .*/v?(\d[\d\.]+)\.tar\.gz
+  https://github.com/Whonix/anon-shared-build-apt-sources-tpo/tags .*/v?(\d[\d\.]+)\.tar\.gz
