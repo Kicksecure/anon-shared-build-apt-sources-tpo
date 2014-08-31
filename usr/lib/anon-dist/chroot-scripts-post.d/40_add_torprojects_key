@@ -48,7 +48,7 @@ unset skip_script
 ##    gpg --list-sigs <long-key-id>
 ##    gpg --check-sigs <long-key-id>
 ## And added to Whonix source code using:
-##    gpg --export <long-key-id> > /home/user/anon-shared-build-apt-sources-tpo/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc
+##    gpg --armor --export <long-key-id> > /home/user/anon-shared-build-apt-sources-tpo/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc
 
 for key in "/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/"*; do
    filename="$(basename "$key")"
