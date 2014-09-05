@@ -54,8 +54,8 @@ export UWT_VERBOSE=1
 true "UWT_VERBOSE: UWT_VERBOSE"
 
 ## Debugging.
-which torsocks
-which uwt
+which torsocks || true
+which uwt || true
 
 ## Update torproject repository upstream package lists, so latest version of Tor, torsocks and obfsproxy gets known.
 apt-get \
