@@ -54,6 +54,8 @@ export UWT_VERBOSE=1
 true "UWT_VERBOSE: UWT_VERBOSE"
 
 ## Debugging.
+## Override with || true in case not installed.
+## This is the case when --no-default-applications is being used.
 which torsocks || true
 which uwt || true
 
