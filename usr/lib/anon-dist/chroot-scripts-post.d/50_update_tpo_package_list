@@ -59,8 +59,18 @@ true "UWT_VERBOSE: UWT_VERBOSE"
 which torsocks || true
 which uwt || true
 
+if [ "$(type -t create_tmp_apt_get_gpgv)" = "function" ]; then
+   create_tmp_apt_get_gpgv
+else
+   true 'INFO: function create_tmp_apt_get_gpgv does not exist.
+If "apt-get update" would show "The following signatures were invalid",
+this would probably go unnoticed by the error handler of this script,
+hence the following apt repository would be silently ignored.'
+fi
+
 ## Update torproject repository upstream package lists, so latest version of Tor, torsocks and obfsproxy gets known.
 apt-get \
+   $apt_get_gpgv_opts \
    $apt_timeout_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    -o Dir::Etc::sourceparts="$EMPTY_DIR" \
@@ -69,6 +79,14 @@ apt-get \
 
 ## Disable apt-cacher-ng proxy.
 unset http_proxy
+
+if [ "$(type -t parse_tmp_apt_get_gpgv)" = "function" ]; then
+   parse_tmp_apt_get_gpgv
+fi
+
+if [ "$(type -t delete_tmp_apt_get_gpgv)" = "function" ]; then
+   delete_tmp_apt_get_gpgv
+fi
 
 ## Explicitly "exit 0", so eventually trapped errors can be ignored.
 exit 0
