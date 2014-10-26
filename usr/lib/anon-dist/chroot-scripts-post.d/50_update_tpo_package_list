@@ -40,8 +40,8 @@ done
 unset skip_script
 
 ## Enable apt-cacher-ng proxy.
-if [ "$(type -t maybe_enable_apt_cache)" = "function" ]; then
-   maybe_enable_apt_cache
+if [ "$(type -t apt_cache_maybe_enable)" = "function" ]; then
+   apt_cache_maybe_enable
 fi
 
 mkdir --parents "$EMPTY_DIR"
@@ -59,10 +59,10 @@ true "UWT_VERBOSE: UWT_VERBOSE"
 which torsocks || true
 which uwt || true
 
-if [ "$(type -t create_tmp_apt_get_gpgv)" = "function" ]; then
-   create_tmp_apt_get_gpgv
+if [ "$(type -t apt_get_gpgv_create_tmp)" = "function" ]; then
+   apt_get_gpgv_create_tmp
 else
-   true 'INFO: function create_tmp_apt_get_gpgv does not exist.
+   true 'INFO: function apt_get_gpgv_create_tmp does not exist.
 If "apt-get update" would show "The following signatures were invalid",
 this would probably go unnoticed by the error handler of this script,
 hence the following apt repository would be silently ignored.'
@@ -80,12 +80,12 @@ apt-get \
 ## Disable apt-cacher-ng proxy.
 unset http_proxy
 
-if [ "$(type -t parse_tmp_apt_get_gpgv)" = "function" ]; then
-   parse_tmp_apt_get_gpgv
+if [ "$(type -t apt_get_gpgv_parse_tmp)" = "function" ]; then
+   apt_get_gpgv_parse_tmp
 fi
 
-if [ "$(type -t delete_tmp_apt_get_gpgv)" = "function" ]; then
-   delete_tmp_apt_get_gpgv
+if [ "$(type -t apt_get_gpgv_delete_tmp)" = "function" ]; then
+   apt_get_gpgv_delete_tmp
 fi
 
 ## Explicitly "exit 0", so eventually trapped errors can be ignored.

@@ -1,3 +1,9 @@
+anon-shared-build-apt-sources-tpo (3:1.0-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 26 Oct 2014 16:23:22 +0000
+
 anon-shared-build-apt-sources-tpo (3:0.9-1) unstable; urgency=low
 
   * New upstream version.
