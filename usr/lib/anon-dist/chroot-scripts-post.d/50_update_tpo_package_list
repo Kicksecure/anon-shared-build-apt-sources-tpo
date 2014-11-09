@@ -17,13 +17,13 @@ error_handler() {
 }
 
 ## {{ Set up error handler.
-if [ "$(type -t error_handler_general)" = "function" ]; then
-   ## Function error_handler_general exists (declared in
+if [ "$(type -t errorhandlergeneral)" = "function" ]; then
+   ## Function errorhandlergeneral exists (declared in
    ## help-steps/pre). Prefer to use the more feature rich version of the error
    ## handler.
-   trap "error_handler_general" ERR
+   trap "errorhandlergeneral" ERR
 else
-   ## Function error_handler_general does not exist. Script
+   ## Function errorhandlergeneral does not exist. Script
    ## runs standalone outside the build script. Fall back to a simpler error
    ## handler.
    trap "error_handler" ERR
@@ -40,8 +40,8 @@ done
 unset skip_script
 
 ## Enable apt-cacher-ng proxy.
-if [ "$(type -t apt_cache_maybe_enable)" = "function" ]; then
-   apt_cache_maybe_enable
+if [ "$(type -t aptcachemaybeenable)" = "function" ]; then
+   aptcachemaybeenable
 fi
 
 mkdir --parents "$EMPTY_DIR"
@@ -59,10 +59,10 @@ true "UWT_VERBOSE: UWT_VERBOSE"
 which torsocks || true
 which uwt || true
 
-if [ "$(type -t apt_get_gpgv_create_tmp)" = "function" ]; then
-   apt_get_gpgv_create_tmp
+if [ "$(type -t aptgetgpgvcreatetmp)" = "function" ]; then
+   aptgetgpgvcreatetmp
 else
-   true 'INFO: function apt_get_gpgv_create_tmp does not exist.
+   true 'INFO: function aptgetgpgvcreatetmp does not exist.
 If "apt-get update" would show "The following signatures were invalid",
 this would probably go unnoticed by the error handler of this script,
 hence the following apt repository would be silently ignored.'
@@ -80,12 +80,12 @@ apt-get \
 ## Disable apt-cacher-ng proxy.
 unset http_proxy
 
-if [ "$(type -t apt_get_gpgv_parse_tmp)" = "function" ]; then
-   apt_get_gpgv_parse_tmp
+if [ "$(type -t aptgetgpgvparsetmp)" = "function" ]; then
+   aptgetgpgvparsetmp
 fi
 
-if [ "$(type -t apt_get_gpgv_delete_tmp)" = "function" ]; then
-   apt_get_gpgv_delete_tmp
+if [ "$(type -t aptgetgpgvdeletetmp)" = "function" ]; then
+   aptgetgpgvdeletetmp
 fi
 
 ## Explicitly "exit 0", so eventually trapped errors can be ignored.

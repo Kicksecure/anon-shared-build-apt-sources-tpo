@@ -10,7 +10,7 @@ keep The Tor Project's APT signing key current.
 
 APT (timeout) options are supported through the apt_timeout_opts environment
 variable. Enabling an apt-cache is supported by using an exported
-apt_cache_maybe_enable bash function.
+aptcachemaybeenable bash function.
 
 This package is produced independently of, and carries no guarantee from,
 The Tor Project.
