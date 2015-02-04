@@ -1,0 +1,242 @@
+commit e8470ffd239cad6089b8181e037afc17be5f5fe8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:40:24 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit cd1fa3978156b7e3b4f47e08752d3d83cefed5ad
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:58:30 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit e1c209d5875c8edbd6e5ecff7e164618c9c9983c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:33:27 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit 2bcb7b4ac0a887e9960b1186fb54494559c26bb1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 19:01:05 2014 +0000
+
+    updated generic makefile
+
+commit 2a8386ea50158cd7716eff42ff2fd9ad0190e811
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 9 14:19:15 2014 +0000
+
+    workaround for "bash: Shellshock fix breaks bash function exporting" - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=763164
+
+commit 40284d692d9abb965e2fe521043746007aab54ab
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 28 22:35:12 2014 +0000
+
+    makefile: refactoring, avoid using IFS
+
+commit 4f23e0b86a7b9451d653a15bd6f2d30ce1bb15ea
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Oct 26 16:23:27 2014 +0000
+
+    refactoring
+
+commit ab5c58a9e616b16e0a33fef0010253b119b7d4de
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 25 01:58:48 2014 +0000
+
+    makefile:
+    - make debdist; make undebdist
+    - cleanup
+    - refactoring
+
+commit 09a33a126150420f3893e6bd37453b404ce4244b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 23 22:43:00 2014 +0000
+
+    makefile:
+    - new target "make undist", which deletes the upstream tarball
+    - $DISTDIR variable for make (un)dist, which defaults to ".." and can be used to create upstream tarballs in arbitrary locations
+    - refactoring, all function names and global variables now start with "make_" to make the script `source`ing friendly
+    - made `source`able
+
+commit eb7b9bf4b346f01bced217b5605c01422347aa92
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 13 12:36:48 2014 +0000
+
+    readme
+
+commit 75382300acda0bbf8e756d9004223765cee3207e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 18 16:05:51 2014 +0000
+
+    bumped version number
+
+commit 3a44f1c87f314d7e448a0230929be06a15f181b1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 18 16:04:41 2014 +0000
+
+        workaround for
+            apt: Provide meaningful exit codes for gpg failures
+            https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=745735
+        W: A error occurred during the signature verification.
+        To catch situations such as:
+            The repository is not updated and the previous index files will be used.
+            GPG error: http://deb.torproject.org stable Release: The following signatures were invalid: KEYEXPIRED 1409325681 KEYEXPIRED 1409325681 KEYEXPIRED 1409325681 KEYEXPIRED 1409325681
+        That apt-repository would otherwise be silently ignored without error notification.
+
+commit d293f864736c1b2ce0aa516b0dbacf47f34f7b36
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 5 15:53:38 2014 +0000
+
+    comment
+
+commit 5d29c3fee935b6939f8fba4c71cb4467b03b05e1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Sep 5 15:52:41 2014 +0000
+
+    fix
+
+commit 0ab2d3b1db390fab21337f23cb47b038b49ddffc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 31 17:11:58 2014 +0000
+
+    anon-shared-build-apt-sources-tpo: updated The Tor Project's apt signing key as per https://trac.torproject.org/projects/tor/ticket/12994#comment:9
+
+commit cc99490483cde2987eb22d99369df9b5b0e7d8b1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 31 17:08:45 2014 +0000
+
+    comment
+
+commit cd5f394f197dcebca5b12d312ada20eebd95af76
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 28 22:01:37 2014 +0000
+
+    use wheezy rather than stable as per https://www.whonix.org/forum/index.php/topic,445.0.html
+
+commit 58d4ded7a8c7c1540a5f0233f6977ec9b0c0da5d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 19 18:52:28 2014 +0000
+
+    makefile: added new feature "make deb-chl-bumpup" - Bump upstream version number in debian/changelog.
+
+commit 85d6afab86f48ea8dada8069eb68f929c2663692
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:54:20 2014 +0000
+
+    Updated debian/changelog.
+
+commit f7ccc5a04ae08fd0c9aa741d51ba9fc0708d2266
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:47:23 2014 +0000
+
+    Fixed changelog date.
+
+commit 67bfa365bb60c8dcaea6f75677c3fc26207118a7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 18:03:21 2014 +0000
+
+    bump version number
+
+commit 7c543389cc427623f680b5e8273b6ee165ce4ff0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 13:35:11 2014 +0000
+
+    Implemented make deb-icup: Combination of make deb-pkg, make deb-pkg-install and make deb-pkg-cleanup.
+
+commit 35d8460123d6ce4f694d9f68abb75d163cfaee4b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 12:42:23 2014 +0000
+
+    packaging
+
+commit 4312a811ec62c3bf5af6dad14bf0d4dcdb66fabc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 04:01:06 2014 +0000
+
+    packaging
+
+commit 74968c081aaf71130adbef3049b4c32479cbc0f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:26:32 2014 +0000
+
+    packaging
+
+commit 97734e11a7e7862c1054902e1b7d1e1988bf8418
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:15:59 2014 +0000
+
+    packaging: removed build dependency on git, since the .git folder won't be included in the upstream tarball.
+
+commit e10ec8671e617a32e7a29cd0c1ecbcc805d1074a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 17:10:57 2014 +0000
+
+    packaging
+
+commit e6f68aca041e00a967ccc51ba50f277c3508b6c3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 15:34:12 2014 +0000
+
+    packaging
+
+commit c65ed9e8a888bd6f37efe4134428ab4038402898
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 6 13:30:25 2014 +0000
+
+    quotes
+
+commit 961d936ba96698b982e4ccaf8495bce75abbc633
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 6 13:20:42 2014 +0000
+
+    use $BASH_SOURCE instead of $0
+
+commit 274f9d6ae9860518885be2f217004ed0a10102f3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 5 08:09:40 2014 +0000
+
+    Bumped debian revision number to avoid lintian warning "new-package-should-close-itp-bug" so we can use lintian --fail-on-warnings as sanity test.
+
+commit 693a234a19931fefaeb383b126525b17fe94c269
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 24 15:45:08 2014 +0000
+
+    added debian epoch; added dotglob
+
+commit 61d73b95744243e68dbb7971a1156752d894cd9a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jun 20 14:47:51 2014 +0000
+
+    fix, added usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc
+
+commit c3c57924997f8fc7d09018b4fc8aa30d48cd67ac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 3 18:27:21 2014 +0000
+
+    readme
+
+commit 1784134bd2e13c738759e0d90b9ee55f58889954
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 15:37:02 2014 +0000
+
+    readme
+
+commit d50d570a35f459600abfe82391620bf1bf978d8c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 31 14:14:26 2014 +0000
+
+    # On branch master
+    nothing to commit (working directory clean)
+
+commit 6c9646803694edfb7233eb7c722b7da00a186ad5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu May 8 22:20:29 2014 +0000
+
+    .
+
+commit a918407b3012ed791007d204c65d2c662684edf6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu May 8 22:19:55 2014 +0000
+
+    .
