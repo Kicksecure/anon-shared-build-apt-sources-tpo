@@ -68,8 +68,12 @@ this would probably go unnoticed by the error handler of this script,
 hence the following apt repository would be silently ignored.'
 fi
 
+if [ "$WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN" = "" ]; then
+   WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN="apt-get"
+fi
+
 ## Update torproject repository upstream package lists, so latest version of Tor, torsocks and obfsproxy gets known.
-apt-get \
+$WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN \
    $apt_get_gpgv_opts \
    $apt_timeout_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
