@@ -44,6 +44,10 @@ if [ "$(type -t aptcachemaybeenable)" = "function" ]; then
    aptcachemaybeenable
 fi
 
+[ -n "$EMPTY_DIR" ] || EMPTY_DIR="/tmp/empty"
+
+mkdir --parents "$EMPTY_DIR"
+
 ## Installing Torprojects Debian package, which helps to keep Torprojects signing key current.
 apt-get \
    $apt_timeout_opts \
