@@ -61,15 +61,6 @@ true "UWT_VERBOSE: UWT_VERBOSE"
 which torsocks || true
 which uwt || true
 
-if [ "$(type -t aptgetgpgvcreatetmp)" = "function" ]; then
-   aptgetgpgvcreatetmp
-else
-   true 'INFO: function aptgetgpgvcreatetmp does not exist.
-If "apt-get update" would show "The following signatures were invalid",
-this would probably go unnoticed by the error handler of this script,
-hence the following apt repository would be silently ignored.'
-fi
-
 if [ "$WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN" = "" ]; then
    WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN="apt-get"
 fi
@@ -85,14 +76,6 @@ $WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN \
 
 ## Disable apt-cacher-ng proxy.
 unset http_proxy
-
-if [ "$(type -t aptgetgpgvparsetmp)" = "function" ]; then
-   aptgetgpgvparsetmp
-fi
-
-if [ "$(type -t aptgetgpgvdeletetmp)" = "function" ]; then
-   aptgetgpgvdeletetmp
-fi
 
 ## Explicitly "exit 0", so eventually trapped errors can be ignored.
 exit 0
