@@ -61,12 +61,12 @@ true "UWT_VERBOSE: UWT_VERBOSE"
 which torsocks || true
 which uwt || true
 
-if [ "$WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN" = "" ]; then
-   WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN="apt-get"
+if [ "$apt_get_update_wrapper" = "" ]; then
+   apt_get_update_wrapper="apt-get"
 fi
 
 ## Update torproject repository upstream package lists, so latest version of Tor, torsocks and obfsproxy gets known.
-$WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN \
+$apt_get_update_wrapper \
    $apt_get_gpgv_opts \
    $apt_timeout_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
