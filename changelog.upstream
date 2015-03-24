@@ -1,3 +1,39 @@
+commit 5bb05d1d719b8db76d24969b46f2a4140c306b33
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 24 17:26:17 2015 +0000
+
+    updated makefile generic to version 1.4
+
+commit 141f580a96b1fa110373ad9254c86355d3fa5437
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Mar 22 17:26:56 2015 +0000
+
+    switched to apt-get-wrapper
+
+commit 7149051ebf1bab59126630dcf0f2f017a72373be
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Mar 22 16:54:37 2015 +0000
+
+    removed apt_get_gpgv workaround, because apt-get-wrapper is a much better workaround
+
+commit a5e11bbd47922783db91b38720a65ac464d0355b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 13 19:41:06 2015 +0000
+
+    make it work outside chroot
+
+commit 230083c6d112177cfadb02dede4b873cfd12d08e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 18 20:54:28 2015 +0000
+
+    use environment variable WHONIX_BUILD_APT_GET_UPDATE_WRAPPER_TEMP_BIN over apt-get if set
+
+commit a64dd6b6246c1fe24a597578ceb29adf419e5538
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:56:00 2015 +0000
+
+    bumped changelog version
+
 commit 179d116603701429d5f8e2578d45e4405280150d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Feb 4 00:44:38 2015 +0000
