@@ -69,6 +69,7 @@ fi
 $apt_get_update_wrapper \
    $apt_get_gpgv_opts \
    $apt_timeout_opts \
+   $apt_misc_opts \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    -o Dir::Etc::sourceparts="$EMPTY_DIR" \
    -o APT::Get::List-Cleanup="0" \
