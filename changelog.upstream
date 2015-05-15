@@ -1,3 +1,15 @@
+commit ffc89872b2c9d45234527d77a213ad7b82fd16ba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 11 10:17:27 2015 +0000
+
+    implemented $apt_misc_opts - https://phabricator.whonix.org/T295
+
+commit 5368d5334ab6906a65649b3ac60cb9cfce4e85c1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 30 17:55:43 2015 +0000
+
+    bumped changelog version
+
 commit a8f69b2fa02a756a9c6b65128b88f9ce0732bf5c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Apr 28 13:43:01 2015 +0000
