@@ -9,8 +9,7 @@ installing The Tor Project's deb.torproject.org-keyring package, which will
 keep The Tor Project's APT signing key current.
 
 APT (timeout) options are supported through the apt_timeout_opts environment
-variable. Enabling an apt-cache is supported by using an exported
-aptcachemaybeenable bash function.
+variable.
 
 This package is produced independently of, and carries no guarantee from,
 The Tor Project.

@@ -39,11 +39,6 @@ for skip_script in $SKIP_SCRIPTS; do
 done
 unset skip_script
 
-## Enable apt-cacher-ng proxy.
-if [ "$(type -t aptcachemaybeenable)" = "function" ]; then
-   aptcachemaybeenable
-fi
-
 [ -n "$EMPTY_DIR" ] || EMPTY_DIR="/tmp/empty"
 
 mkdir --parents "$EMPTY_DIR"
@@ -56,9 +51,6 @@ apt-get \
    -o Dir::Etc::sourcelist="/etc/apt/sources.list.d/torproject.list" \
    -o Dir::Etc::sourceparts="$EMPTY_DIR" \
    install deb.torproject.org-keyring
-
-## Disable apt-cacher-ng proxy.
-unset http_proxy
 
 ## Explicitly "exit 0", so eventually trapped errors can be ignored.
 exit 0
