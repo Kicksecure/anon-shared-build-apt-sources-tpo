@@ -14,15 +14,10 @@ Standards-Version: 3.9.6
 
 Package: anon-shared-build-apt-sources-tpo
 Architecture: all
-Depends: ${misc:Depends}
-Description: Adds TPO's APT repository to Anonymity Linux Distributions during build
+Depends: apt-during-apt, ${misc:Depends}
+Description: Adds TPO's APT repository to Anonymity Linux Distributions
  Comes with "deb http://deb.torproject.org/torproject.org stable main", The Tor
- Project's APT signing key, and required chroot scripts.
- .
- Chroot scripts include adding The Tor Project's APT signing key to apt-key,
- updating package lists to include The Tor Project's APT repository and
- installing The Tor Project's deb.torproject.org-keyring package, which will
- keep The Tor Project's APT signing key current.
+ Project's APT signing key.
  .
  APT (timeout) options are supported through the apt_timeout_opts environment
  variable.
