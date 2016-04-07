@@ -1,3 +1,25 @@
+commit 35d5fdb0faa89b3ce101b5c6c5750230c8c5487a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 6 19:53:10 2016 +0000
+
+    converted chroot scripts into postinst script
+    
+    https://phabricator.whonix.org/T461
+
+commit 495fc4cf73392dc9b9fd7e780afb92eb16c32d80
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 5 00:00:50 2016 +0000
+
+    converted chroot-script 40_add_torprojects_key to postinst script
+    
+    https://phabricator.whonix.org/T461
+
+commit 5f49829376707bf5e51f29492e09003e1b43d990
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 25 14:07:39 2015 +0000
+
+    bumped changelog version
+
 commit 3b5aa318c939230014c1e2bf0b2e12b6113846cf
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 24 17:47:11 2015 +0000
