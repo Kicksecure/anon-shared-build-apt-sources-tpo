@@ -1,3 +1,25 @@
+commit f62153744865ccb2ce6478edf4ecef3fd0c8fe90
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 13 16:55:33 2016 +0000
+
+    more out commented by default repositories to ease testing
+    
+    https://phabricator.whonix.org/T472
+
+commit 822ca719f783b66877c4c82f9433d2df926ace81
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 8 18:54:20 2016 +0000
+
+    enabled deb-src so we can download source pages during build
+    
+    https://phabricator.whonix.org/T472
+
+commit 3d40db670f0ef8ab69a379a1c35f69df860d1be0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 7 22:54:27 2016 +0000
+
+    bumped changelog version
+
 commit 35d5fdb0faa89b3ce101b5c6c5750230c8c5487a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 6 19:53:10 2016 +0000
