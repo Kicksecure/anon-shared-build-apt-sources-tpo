@@ -34,24 +34,6 @@ tpo_keys_Add() {
    done
 }
 
-postinst_install_first() {
-   if [ -e /var/lib/anon-shared-build-apt-sources-tpo/postinst_install_first.skip ]; then
-      return 0
-   fi
-   if [ -e /var/lib/anon-shared-build-apt-sources-tpo/postinst_install_first.done ]; then
-      return 0
-   fi
-
-   ## provides:
-   ## apt_get_during_apt_get_download
-   source /usr/lib/apt-during-apt/apt-during-apt.bsh
-
-   apt_get_during_apt_get_download "/etc/apt/sources.list.d/torproject.list" "deb.torproject.org-keyring"
-
-   mkdir --parents /var/lib/anon-shared-build-apt-sources-tpo
-   touch /var/lib/anon-shared-build-apt-sources-tpo/postinst_install_first.done
-}
-
 true "
 #####################################################################
 ## INFO: BEGIN: $DPKG_MAINTSCRIPT_PACKAGE $DPKG_MAINTSCRIPT_NAME ${1+"$@"}
@@ -70,8 +52,6 @@ case "$1" in
          mkdir --parents "/var/lib/anon-dist/do_once"
          touch "/var/lib/anon-dist/do_once/tpo_keys_add"
       fi
-
-      postinst_install_first
 
       true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
 
