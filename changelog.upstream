@@ -1,3 +1,24 @@
+commit b416da52403162172611f803d28631a9f42f2ecc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 14 23:45:18 2016 +0000
+
+    removed download of packages from deb.torproject.org
+    
+    because using different implementation (uploading these packages to Whonix
+    local / remote repository.
+    
+    Not installing apt-during-apt and not installing these packages also ensures a
+    smoother transition for existing Whonix versions where deb.torproject.org is to
+    be disabled.
+    
+    https://phabricator.whonix.org/T472
+
+commit ba4d76f2892e8956eda41535daded57065b60979
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 14 21:14:46 2016 +0000
+
+    bumped changelog version
+
 commit f62153744865ccb2ce6478edf4ecef3fd0c8fe90
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 13 16:55:33 2016 +0000
