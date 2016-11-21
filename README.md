@@ -1,12 +1,7 @@
-# Adds TPO's APT repository to Anonymity Linux Distributions during build #
+# Adds TPO's APT repository to Anonymity Linux Distributions #
 
 Comes with "deb http://deb.torproject.org/torproject.org stable main", The Tor
-Project's APT signing key, and required chroot scripts.
-
-Chroot scripts include adding The Tor Project's APT signing key to apt-key,
-updating package lists to include The Tor Project's APT repository and
-installing The Tor Project's deb.torproject.org-keyring package, which will
-keep The Tor Project's APT signing key current.
+Project's APT signing key.
 
 APT (timeout) options are supported through the apt_timeout_opts environment
 variable.
@@ -61,7 +56,7 @@ gpg --export 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA | sudo apt-key add -
 3\. Add Whonix's APT repository.
 
 ```
-echo "deb http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/ wheezy main" > /etc/apt/sources.list.d/whonix.list
+echo "deb http://deb.whonix.org jessie main" > /etc/apt/sources.list.d/whonix.list
 ```
 
 4\. Update your package lists.
