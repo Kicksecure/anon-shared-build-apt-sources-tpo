@@ -1,3 +1,41 @@
+commit bad220d01f5e6f110d3334c6c4aa38b6fb43de57
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 10:42:26 2017 +0000
+
+    add lintian override
+    
+    anon-shared-build-apt-sources-tpo: package-installs-apt-sources
+
+commit eaa934a704ddc9c640e399f07c1a7307d9ff9550
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 08:21:26 2017 +0000
+
+    update torprojectarchive.asc (more signatures only)
+
+commit 6a36f56b39dcca321f94f0349fa2b6e73ed87d91
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 08:17:01 2017 +0000
+
+    update repository comments
+
+commit 950e14ae1bb11222011c2147c8239947cfc235fa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 08:15:02 2017 +0000
+
+    port to stretch
+
+commit 750b320ef7d01715e496a38caf697133b27fcae1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 08:35:25 2017 +0100
+
+    packaging, bumped Standards-Version from 3.9.6 to 3.9.8 for jessie support
+
+commit 2fa89e5c545aaf7ef19ec0ac0e935e195d32a413
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 10 00:10:31 2016 +0000
+
+    bumped changelog version
+
 commit a66e023062da6af07a3c8b142df7b19d5f3bee27
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 21 17:39:07 2016 +0000
