@@ -2,9 +2,9 @@
 ## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
-deb http://deb.torproject.org/torproject.org jessie main
-deb-src http://deb.torproject.org/torproject.org jessie main
+deb http://deb.torproject.org/torproject.org stretch main
+deb-src http://deb.torproject.org/torproject.org stretch main
 
-#deb http://deb.torproject.org/torproject.org tor-experimental-0.2.7.x-jessie main
-#deb http://deb.torproject.org/torproject.org tor-nightly-0.2.8.x-jessie main
-#deb http://deb.torproject.org/torproject.org tor-nightly-master-jessie main
+#deb http://deb.torproject.org/torproject.org tor-experimental-0.2.7.x-stretch main
+#deb http://deb.torproject.org/torproject.org tor-nightly-0.2.8.x-stretch main
+#deb http://deb.torproject.org/torproject.org tor-nightly-master-stretch main
