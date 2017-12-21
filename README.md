@@ -3,9 +3,6 @@
 Comes with "deb http://deb.torproject.org/torproject.org stable main", The Tor
 Project's APT signing key.
 
-APT (timeout) options are supported through the apt_timeout_opts environment
-variable.
-
 This package is produced independently of, and carries no guarantee from,
 The Tor Project.
 
