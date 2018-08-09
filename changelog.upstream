@@ -1,3 +1,15 @@
+commit cb7df8e35d4c98739dc0344c6f5f00196c6a5527
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 6 16:19:46 2018 +0800
+
+    fix mime type
+
+commit 5c32f9296543b508ed0b6370456a12239722e076
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 1 14:47:31 2018 +0000
+
+    bumped changelog version
+
 commit c8cf0642beab390feaee090d94daac8417540914
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 29 15:50:10 2018 +0000
