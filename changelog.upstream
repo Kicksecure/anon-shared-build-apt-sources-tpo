@@ -1,3 +1,15 @@
+commit f14b4a04331e1df55153443818791768f5878b82
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 13 19:23:09 2018 +0000
+
+    "Depends: gnupg" to fix warning during postinst
+
+commit a366ece52f290a70e2a6ad7d04e02474198db4c3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 6 07:37:10 2018 +0000
+
+    bumped changelog version
+
 commit 9e201113b28f9cabc66ee0e5b47c83a0cae62b06
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 3 05:16:48 2018 +0000
