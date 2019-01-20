@@ -14,6 +14,7 @@ Standards-Version: 3.9.8
 Package: anon-shared-build-apt-sources-tpo
 Architecture: all
 Depends: gnupg, ${misc:Depends}
+Recommends: deb.torproject.org-keyring
 Description: Adds TPO's APT repository to Anonymity Linux Distributions
  Comes with "deb http://deb.torproject.org/torproject.org stable main", The Tor
  Project's APT signing key.
