@@ -2,7 +2,7 @@
 # See the file COPYING for copying conditions.
 
 deb https://deb.torproject.org/torproject.org stretch main
-deb-src https://deb.torproject.org/torproject.org stretch main
+#deb-src https://deb.torproject.org/torproject.org stretch main
 
 #deb https://deb.torproject.org/torproject.org tor-experimental-0.3.0.x-stretch main
 #deb https://deb.torproject.org/torproject.org tor-nightly-0.2.9.x-stretch main
