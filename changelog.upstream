@@ -1,3 +1,53 @@
+commit 108816f4595c8c48863b5dfcc0bf24082a39216b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 20 09:40:26 2019 +0000
+
+    Recommends: deb.torproject.org-keyring
+
+commit a99b453e3d77cec027c5052f55f57a6eb56a83fb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 20 08:04:34 2019 +0000
+
+    add comment: onion apt sources
+
+commit cf351670ab3ae618e86f1be79c8a1a26dc7d38e4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 20 07:57:45 2019 +0000
+
+    silence "warning: apt-key should not be used in scripts"
+    https://forums.whonix.org/t/warning-apt-key-should-not-be-used-in-scripts/6342
+    apt-key does not explain why it is bad to use apt-key in maintainer scripts.
+    Looks more than a Debian policy reason. Debian implements apt-keys differently.
+    Debian ships binary gpg files in folder '/etc/apt/trusted.gpg.d/'. The effort
+    to create apt keys for folder '/etc/apt/trusted.gpg.d/' is high.
+    
+    APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true
+    export APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE
+
+commit 92dcc283d8a5327c0dcc2af5fe02cb00186813a4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 20 07:53:44 2019 +0000
+
+    disable deb-src by default
+    
+    no longer required by default since no longer using from Whonix build script
+    
+    https://phabricator.whonix.org/T721
+
+commit 7948da7d5c6e964455375499704851b3ca2cc21d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 20 07:42:38 2019 +0000
+
+    https by default
+    
+    https://phabricator.whonix.org/T721
+
+commit 7a8c76a51bf120a3d23061a9c30b775dcc3cf0cd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 13 19:44:57 2018 +0000
+
+    bumped changelog version
+
 commit f14b4a04331e1df55153443818791768f5878b82
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Sep 13 19:23:09 2018 +0000
