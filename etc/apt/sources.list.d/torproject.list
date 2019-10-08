@@ -5,7 +5,8 @@
 #### project Whonix and Kicksecure
 #### category networking and apt
 #### installed_by_default no
-#### description Tor Project APT repository sources.list
+#### description
+## Tor Project APT repository sources.list
 #### meta end
 
 deb tor+https://deb.torproject.org/torproject.org buster main
