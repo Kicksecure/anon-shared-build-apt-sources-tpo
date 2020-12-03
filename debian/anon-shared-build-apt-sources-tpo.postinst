@@ -29,6 +29,50 @@ tpo_keys_Add() {
    ## And added to Whonix source code using:
    ##    gpg --armor --export <long-key-id> > /home/user/anon-shared-build-apt-sources-tpo/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc
 
+   ## Update 03 December 2020
+   ## Review already imported key fingerprint.
+   ## gpg --fingerprint "A3C4 F0F9 79CA A22C DBA8  F512 EE8C BC9E 886D DD89"
+   # pub   rsa2048 2009-09-04 [SC] [expires: 2022-08-05]
+   #       A3C4 F0F9 79CA A22C DBA8  F512 EE8C BC9E 886D DD89
+   # uid           [ unknown] deb.torproject.org archive signing key
+   ## Review already imported key fingerprint.
+   ## gpg --keyid-format long --import --import-options show-only --with-fingerprint
+   # gpg: key EE8CBC9E886DDD89: 79 signatures not checked due to missing keys
+   # pub   rsa2048/EE8CBC9E886DDD89 2009-09-04 [SC] [expires: 2022-08-05]
+   #       Key fingerprint = A3C4 F0F9 79CA A22C DBA8  F512 EE8C BC9E 886D DD89
+   # uid                            deb.torproject.org archive signing key
+   ## Downloaded using scurl:
+   ## scurl-download https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc
+   ## Show fingerprint without key import:
+   ## gpg --keyid-format long --import --import-options show-only --with-fingerprint A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc
+   ## Output:
+   # gpg: key EE8CBC9E886DDD89: 82 signatures not checked due to missing keys
+   # pub   rsa2048/EE8CBC9E886DDD89 2009-09-04 [SC] [expires: 2024-11-17]
+   #       Key fingerprint = A3C4 F0F9 79CA A22C DBA8  F512 EE8C BC9E 886D DD89
+   # uid                            deb.torproject.org archive signing key
+   # sub   rsa2048/74A941BA219EC810 2009-09-04 [S] [expires: 2022-06-11]
+   ## Imported key:
+   ## gpg --import A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc
+   # gpg --import A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc
+   # gpg: key EE8CBC9E886DDD89: 82 signatures not checked due to missing keys
+   # gpg: key EE8CBC9E886DDD89: "deb.torproject.org archive signing key" 5 new signatures
+   # gpg: Total number processed: 1
+   # gpg:         new signatures: 5
+   # gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+   # gpg: depth: 0  valid:   1  signed:   3  trust: 0-, 0q, 0n, 0m, 0f, 1u
+   # gpg: depth: 1  valid:   3  signed:   6  trust: 1-, 1q, 0n, 1m, 0f, 0u
+   # gpg: next trustdb check due at 2022-01-15
+   ## Review fingerprint after having imported updated key file:
+   ## gpg --fingerprint "A3C4 F0F9 79CA A22C DBA8  F512 EE8C BC9E 886D DD89"
+   # pub   rsa2048 2009-09-04 [SC] [expires: 2024-11-17]
+   #       A3C4 F0F9 79CA A22C DBA8  F512 EE8C BC9E 886D DD89
+   # uid           [ unknown] deb.torproject.org archive signing key
+   # sub   rsa2048 2009-09-04 [S] [expires: 2022-06-11]
+   ## Conclusion:
+   ## Same fingerprint but with extended key expiration.
+   ## Update key in package:
+   #cp ./A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc ./usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc
+
    apt_target_key="/etc/apt/trusted.gpg.d/torprojectarchive.gpg"
    apt_source_key="/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc"
 
