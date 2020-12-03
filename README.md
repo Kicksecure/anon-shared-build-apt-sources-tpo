@@ -7,7 +7,7 @@ This package is produced independently of, and carries no guarantee from,
 The Tor Project.
 ## How to install `anon-shared-build-apt-sources-tpo` using apt-get ##
 
-1\. Download [Whonix's Signing Key]().
+1\. Download Whonix's Signing Key.
 
 ```
 wget https://www.whonix.org/patrick.asc
