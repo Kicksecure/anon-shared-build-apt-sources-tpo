@@ -9,7 +9,7 @@ fi
 
 set -e
 
-tpo_keys_Add() {
+tpo_keys_add() {
    ## silence "warning: apt-key should not be used in scripts"
    ## https://forums.whonix.org/t/warning-apt-key-should-not-be-used-in-scripts/6342
    ## apt-key does not explain why it is bad to use apt-key in maintainer scripts.
@@ -93,7 +93,7 @@ case "$1" in
       ## because when the user updates, the deb.torproject.org-keyring deb package is already
       ## installed, which does a better job updating Tor Project's signing key.
       if [ ! -f "/var/lib/anon-dist/do_once/tpo_keys_add" ]; then
-         tpo_keys_Add
+         tpo_keys_add
          mkdir --parents "/var/lib/anon-dist/do_once"
          touch "/var/lib/anon-dist/do_once/tpo_keys_add"
       fi
