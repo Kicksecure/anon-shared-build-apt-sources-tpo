@@ -1,3 +1,9 @@
+anon-shared-build-apt-sources-tpo (3:4.7-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 11 Mar 2021 19:31:42 +0000
+
 anon-shared-build-apt-sources-tpo (3:4.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
