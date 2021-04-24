@@ -16,5 +16,5 @@ deb tor+https://deb.torproject.org/torproject.org buster main
 #deb tor+https://deb.torproject.org/torproject.org tor-nightly-0.2.9.x-buster main
 #deb tor+https://deb.torproject.org/torproject.org tor-nightly-master-buster main
 
-#deb tor+http://sdscoq7snqtznauu.onion/torproject.org buster main
-#deb-src tor+http://sdscoq7snqtznauu.onion/torproject.org buster main
+#deb tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org buster main
+#deb-src tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org buster main
