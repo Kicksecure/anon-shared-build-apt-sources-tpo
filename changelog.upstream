@@ -1,3 +1,17 @@
+commit 0153003e7f3d1f7e2788e0ba697290a04f5017d3
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Apr 24 07:46:49 2021 -0400
+
+    update comment to deb.torproject.org to onion v3
+    
+    http://web.archive.org/web/20210421073511/http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/
+
+commit 74b936911a47b490a8302eaa4a29e3195bf7c234
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 17 10:55:22 2021 -0400
+
+    bumped changelog version
+
 commit 0ab7a0cfac608a4cb6695521ecd39f15f00e51fb
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Mar 17 09:45:10 2021 -0400
