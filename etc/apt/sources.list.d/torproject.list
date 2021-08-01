@@ -9,12 +9,12 @@
 ## Tor Project APT repository sources.list
 #### meta end
 
-deb tor+https://deb.torproject.org/torproject.org buster main
-#deb-src tor+https://deb.torproject.org/torproject.org buster main
+deb tor+https://deb.torproject.org/torproject.org bullseye main
+#deb-src tor+https://deb.torproject.org/torproject.org bullseye main
 
-#deb tor+https://deb.torproject.org/torproject.org tor-experimental-0.3.0.x-buster main
-#deb tor+https://deb.torproject.org/torproject.org tor-nightly-0.2.9.x-buster main
-#deb tor+https://deb.torproject.org/torproject.org tor-nightly-master-buster main
+#deb tor+https://deb.torproject.org/torproject.org tor-experimental-0.3.0.x-bullseye main
+#deb tor+https://deb.torproject.org/torproject.org tor-nightly-0.2.9.x-bullseye main
+#deb tor+https://deb.torproject.org/torproject.org tor-nightly-master-bullseye main
 
-#deb tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org buster main
-#deb-src tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org buster main
+#deb tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org bullseye main
+#deb-src tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org bullseye main
