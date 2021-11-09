@@ -9,14 +9,6 @@ fi
 
 set -e
 
-gpg_tmp_create() {
-   gpg_tmp="$(mktemp --directory)"
-
-   rm --recursive --force "$gpg_tmp"
-   mkdir --parents "$gpg_tmp"
-   chmod 700 "$gpg_tmp"
-}
-
 tpo_keys_add() {
    ## The torproject archive key has been manually downloaded using the key fingerprint from
    ## https://www.torproject.org/docs/debian.html.en and https://www.torproject.org/docs/signing-keys.html.en
@@ -72,18 +64,16 @@ tpo_keys_add() {
    ## Update key in package:
    #cp ./A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc ./usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc
 
-   apt_target_key="/etc/apt/trusted.gpg.d/torprojectarchive.gpg"
+   ## /usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc cannot be simply moved to
+   ## /usr/share/keyrings/tor-archive-keyring.gpg in this package since it would break APT since then another package
+   ## deb.torproject.org-keyring would also try to own that file.
+   ##
+   ## Need to write to /usr/share/keyrings/tor-archive-keyring.gpg because that is hardcoded in
+   ## /etc/apt/sources.list.d/torproject.list signed-by.
    apt_source_key="/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc"
+   apt_target_key="/usr/share/keyrings/tor-archive-keyring.gpg"
 
-   gpg_tmp_create
-
-   cat "$apt_source_key" | \
-      gpg \
-         --dearmor \
-         --no-options \
-         --homedir "$gpg_tmp" \
-         --no-default-keyring \
-         > "$apt_target_key"
+   apt-key-install "$apt_source_key" "$apt_target_key"
 }
 
 true "
