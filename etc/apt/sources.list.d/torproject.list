@@ -22,4 +22,3 @@ deb     [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] https://deb.torp
 
 deb     [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org bullseye main
 #deb-src [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org bullseye main
-
