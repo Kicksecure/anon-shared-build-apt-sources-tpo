@@ -1,3 +1,44 @@
+commit 67c8c823f457f609cc7466ebc9e0e666a6fe5a0b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 16:11:49 2021 -0500
+
+    fix
+
+commit 15e0d448a25d91f1f258c44c70452efb0f74c2e8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 16:11:01 2021 -0500
+
+    compatibility with APT signed-by;
+    port to `apt-key-install` by package helper-scripts
+
+commit 2540b40ac46bee29abdf65761d0ed6258a70b37e
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 15:30:30 2021 -0500
+
+    minor
+
+commit 882a14d0627b2fc0afa06bd7fed56070d78b4ed5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 15:29:26 2021 -0500
+
+    `/etc/apt/sources.list.d/torproject.list`: use APT `signed-by`
+    
+    https://forums.whonix.org/t/apt-repository-signing-keys-per-apt-sources-list-signed-by/12302
+    
+    https://support.torproject.org/apt/
+
+commit 123718f869ec3b757b2ec7f23f32bcf085ce122b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 14:32:27 2021 -0500
+
+    readme
+
+commit d132758f7b077e0b66efddc4cf0cb7db4211a621
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Sep 11 18:32:31 2021 -0400
+
+    bumped changelog version
+
 commit 511927dc0c509d5cc006f16cbe172444b94f96d3
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Sep 11 16:31:08 2021 -0400
