@@ -65,16 +65,16 @@ tpo_keys_add() {
    #cp ./A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc ./usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc
 
    ## /usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc cannot be simply moved to
-   ## /usr/share/keyrings/tor-archive-keyring.gpg in this package since it would break APT since then another package
+   ## /usr/share/keyrings/deb.torproject.org-keyring.gpg in this package since it would break APT since then another package
    ## deb.torproject.org-keyring would also try to own that file.
    ##
-   ## Need to write to /usr/share/keyrings/tor-archive-keyring.gpg because that is hardcoded in
+   ## Need to write to /usr/share/keyrings/deb.torproject.org-keyring.gpg because that is hardcoded in
    ## /etc/apt/sources.list.d/torproject.list signed-by.
    apt_source_key="/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc"
-   apt_target_key="/usr/share/keyrings/tor-archive-keyring.gpg"
+   apt_target_key="/usr/share/keyrings/deb.torproject.org-keyring.gpg"
 
-   if test -f /usr/share/keyrings/tor-archive-keyring.gpg ; then
-      true "INFO: File '/usr/share/keyrings/tor-archive-keyring.gpg' already exists, not overwriting, ok."
+   if test -f /usr/share/keyrings/deb.torproject.org-keyring.gpg ; then
+      true "INFO: File '/usr/share/keyrings/deb.torproject.org-keyring.gpg' already exists, not overwriting, ok."
       return 0
    fi
 
