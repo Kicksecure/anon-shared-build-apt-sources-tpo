@@ -1,4 +1,4 @@
-# Adds TPO's APT repository to Anonymity Linux Distributions #
+# Adds TPO's APT repository to Derivative Linux Distributions #
 
 Comes with "deb http://deb.torproject.org/torproject.org stable main", The Tor
 Project's APT signing key.
