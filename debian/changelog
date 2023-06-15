@@ -1,3 +1,9 @@
+anon-shared-build-apt-sources-tpo (3:5.8-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 15 Jun 2023 16:57:55 +0000
+
 anon-shared-build-apt-sources-tpo (3:5.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
