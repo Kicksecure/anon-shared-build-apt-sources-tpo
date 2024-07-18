@@ -1,3 +1,21 @@
+commit 980f4caad418ff7b2887f33cbc452dfd915553a5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jul 18 09:36:38 2024 -0400
+
+    update signing key
+    
+    source:
+    
+    `cp /usr/share/keyrings/deb.torproject.org-keyring.gpg ./usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc`
+    
+    from package `deb.torproject.org-keyring`
+
+commit 6f1a492dd40a33f174fffc1481d5b24214de7e10
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Nov 11 20:11:30 2023 +0000
+
+    bumped changelog version
+
 commit ff625db94dc2293e05d49a612fe14521f99c3fdb
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Nov 11 13:41:32 2023 -0500
