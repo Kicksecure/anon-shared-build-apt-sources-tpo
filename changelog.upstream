@@ -1,3 +1,29 @@
+commit 53917abe73ddf71f83ceac28e1ff198161578cba
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jul 18 12:43:58 2024 -0400
+
+    comments
+
+commit cceffc909db3e784e0de17a7b867e6e143239e81
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jul 18 12:43:36 2024 -0400
+
+    update signing key
+
+commit 42a92ec8b4f396c75393895e4b5eb53c1095c8f7
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jul 18 12:34:54 2024 -0400
+
+    Revert "update signing key"
+    
+    This reverts commit 980f4caad418ff7b2887f33cbc452dfd915553a5.
+
+commit e051268f151dbc9ad374aa2a0a84052522d8d9fe
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Jul 18 14:04:55 2024 +0000
+
+    bumped changelog version
+
 commit 980f4caad418ff7b2887f33cbc452dfd915553a5
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Jul 18 09:36:38 2024 -0400
