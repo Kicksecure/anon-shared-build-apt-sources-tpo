@@ -1,0 +1,51 @@
+## Copyright (C) 2012 - 2025 ENCRYPTED SUPPORT LLC <adrelanos@whonix.org>
+## See the file COPYING for copying conditions.
+
+#### meta start
+#### project Whonix and Kicksecure
+#### category networking and apt
+#### installed_by_default no
+#### description
+## Tor Project APT repository sources file
+#### meta end
+
+## https://support.torproject.org/apt/
+
+#### ENABLED SOURCES ####
+
+Types: deb
+URIs: https://deb.torproject.org/torproject.org
+Suites: trixie
+Components: main
+Enabled: yes
+Signed-By: /usr/share/keyrings/deb.torproject.org-keyring.gpg
+
+#### DISABLED BY DEFAULT SOURCES ####
+
+Types: deb-src
+URIs: https://deb.torproject.org/torproject.org
+Suites: trixie
+Components: main
+Enabled: no
+Signed-By: /usr/share/keyrings/deb.torproject.org-keyring.gpg
+
+Types: deb deb-src
+URIs: https://deb.torproject.org/torproject.org
+Suites: tor-experimental-trixie
+Components: main
+Enabled: no
+Signed-By: /usr/share/keyrings/deb.torproject.org-keyring.gpg
+
+Types: deb deb-src
+URIs: https://deb.torproject.org/torproject.org
+Suites: tor-nightly-main-trixie
+Components: main
+Enabled: no
+Signed-By: /usr/share/keyrings/deb.torproject.org-keyring.gpg
+
+Types: deb deb-src
+URIs: tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org
+Suites: trixie
+Components: main
+Enabled: no
+Signed-By: /usr/share/keyrings/deb.torproject.org-keyring.gpg

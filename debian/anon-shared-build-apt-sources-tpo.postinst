@@ -69,7 +69,7 @@ tpo_keys_add() {
    ## deb.torproject.org-keyring would also try to own that file.
    ##
    ## Need to write to /usr/share/keyrings/deb.torproject.org-keyring.gpg because that is hardcoded in
-   ## /etc/apt/sources.list.d/torproject.list signed-by.
+   ## /etc/apt/sources.list.d/torproject.sources signed-by.
    apt_source_key="/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc"
    apt_target_key="/usr/share/keyrings/deb.torproject.org-keyring.gpg"
 
