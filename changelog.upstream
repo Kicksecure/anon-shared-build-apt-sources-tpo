@@ -1,3 +1,31 @@
+commit 79073f0217985f2cb9e5fa45f8c21696fa5c574b
+Merge: 2d29fce fb4d522
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jan 5 03:39:54 2026 -0500
+
+    Merge remote-tracking branch 'github-kicksecure/master'
+
+commit fb4d5222d4b304a25113efcf4e31aaeeb07b1e94
+Merge: 2d29fce 35a42cd
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jan 5 03:28:46 2026 -0500
+
+    Merge pull request #1 from Nurmagoz/patch-1
+    
+    Update torproject.sources link
+
+commit 35a42cd98533e3cf6039770f64566a0e0eb9fe28
+Author: Nurmagoz <11895339+Nurmagoz@users.noreply.github.com>
+Date:   Wed Dec 31 20:35:31 2025 +0000
+
+    Update torproject.sources link
+
+commit 2d29fce5d7956182154093edef24f8a1d9cc63a9
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Sep 19 16:08:10 2025 +0000
+
+    bumped changelog version
+
 commit 851549573db5a71a2079240f85436aebcd927792
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Sep 18 10:04:45 2025 -0400
