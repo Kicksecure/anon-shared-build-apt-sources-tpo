@@ -72,7 +72,9 @@ tpo_keys_add() {
    ##
    ## Need to write to /usr/share/keyrings/deb.torproject.org-keyring.gpg because that is hardcoded in
    ## /etc/apt/sources.list.d/torproject.sources signed-by.
+   ## key format: '.asc' (gpg armored public key file)
    apt_source_key="/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc"
+   ## key format: '.gpg' (gpg binary public key file)
    apt_target_key="/usr/share/keyrings/deb.torproject.org-keyring.gpg"
 
    ## Sanity test.
@@ -83,6 +85,7 @@ tpo_keys_add() {
       return 0
    fi
 
+   ## 'apt-key-install' includes error handling.
    apt-key-install "$apt_source_key" "$apt_target_key"
 }
 
