@@ -4,6 +4,7 @@
 ## See the file COPYING for copying conditions.
 
 if [ -f /usr/libexec/helper-scripts/pre.bsh ]; then
+  # shellcheck source=../../helper-scripts/usr/libexec/helper-scripts/pre.bsh
   source /usr/libexec/helper-scripts/pre.bsh
 fi
 
