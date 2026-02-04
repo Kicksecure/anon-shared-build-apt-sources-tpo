@@ -7,10 +7,11 @@ if [ -f /usr/libexec/helper-scripts/pre.bsh ]; then
    source /usr/libexec/helper-scripts/pre.bsh
 fi
 
-set -x
 set -e
 
 tpo_keys_add() {
+   set -x
+
    ## The torproject archive key has been manually downloaded using the key fingerprint from
    ## https://www.torproject.org/docs/debian.html.en and https://www.torproject.org/docs/signing-keys.html.en
    ## using gpg:
@@ -73,6 +74,8 @@ tpo_keys_add() {
    ## /etc/apt/sources.list.d/torproject.sources signed-by.
    apt_source_key="/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc"
    apt_target_key="/usr/share/keyrings/deb.torproject.org-keyring.gpg"
+
+   sq cert lint --cert-file '/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc'
 
    if test -f '/usr/share/keyrings/deb.torproject.org-keyring.gpg' ; then
       printf '%s\n' "INFO: File '/usr/share/keyrings/deb.torproject.org-keyring.gpg' already exists, not overwriting, ok."
