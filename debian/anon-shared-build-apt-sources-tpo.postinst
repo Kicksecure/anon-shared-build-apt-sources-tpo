@@ -95,7 +95,6 @@ true "
 case "$1" in
    configure)
       true "INFO: Configuring $DPKG_MAINTSCRIPT_PACKAGE..."
-
       ## Doing this only once,
       ## because when the user updates, the 'deb.torproject.org-keyring' deb package is already
       ## installed, which does a better job updating Tor Project's signing key.
@@ -104,12 +103,9 @@ case "$1" in
          mkdir --parents -- "/var/lib/anon-dist/do_once"
          touch -- "/var/lib/anon-dist/do_once/tpo_keys_add"
       fi
-
       true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
-
       ;;
-
-   *)
+   *) true "INFO: No action."
       ;;
 esac
 
