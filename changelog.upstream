@@ -1,3 +1,89 @@
+commit c6b87072cb79d1ee6f1b08e724609cb225ab2b98
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 06:38:15 2026 -0500
+
+    shellcheck
+
+commit 26088bea650c5d59a856f3d875dd07d0a85b0795
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 06:36:31 2026 -0500
+
+    shellcheck
+
+commit 9119b3a971e5a3fcdf0a13ec1cf9c39785fdf6b1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 06:35:00 2026 -0500
+
+    indent
+
+commit d3aa69005653a5d6b228f0c69b98e761c6a22f98
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 06:34:24 2026 -0500
+
+    refactoring
+
+commit 912bcf1831e5c19ad9d9c1b06e8aa7fe1c1cd3a2
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 06:22:18 2026 -0500
+
+    refactoring
+
+commit 159a3624bad79193877664ce0ec394c3ae9fdff8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 06:09:01 2026 -0500
+
+    comments
+
+commit 22e0b61c34f0ed0210e48c0c66bd375cc4f8318d
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 06:03:44 2026 -0500
+
+    Revert "drop `apt-install-key` because no longer necessary since APT nowadays has native `.asc` (gpg armored file) support"
+    
+    This reverts commit bcea1c2f25b5cbc957a5342c6b72e4ff7a2763df.
+
+commit 4ff55cc6123a52a395c9871e2165f7c383a9d967
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 05:59:49 2026 -0500
+
+    drop `apt-key-install` because no longer necessary since APT nowadays has native `.asc` (gpg armored file) support
+
+commit 12794c0d70cb6d7e0ee1c70d7facdd5fcd66bcd1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 05:54:56 2026 -0500
+
+    comment
+
+commit 076cc05c6b6bf78cab353921f421cd6a6887eaee
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 05:53:29 2026 -0500
+
+    sq cert lint --cert-file
+
+commit 1ee56399a60c4d7d9eb60c46d5046b9225021251
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 05:44:26 2026 -0500
+
+    minor
+
+commit a5f110d90f2a79bd548fd1e657d71e5129cd799a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 05:43:45 2026 -0500
+
+    end-of-options
+
+commit 4a34e6635a7a2827dfe505205370c7e8b22cdbe5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Feb 4 05:43:15 2026 -0500
+
+    update signing key
+
+commit 08b7b149b1010efee8c74db0c4a1e81ae67acf91
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jan 5 10:27:32 2026 +0000
+
+    bumped changelog version
+
 commit 79073f0217985f2cb9e5fa45f8c21696fa5c574b
 Merge: 2d29fce fb4d522
 Author: Patrick Schleizer <adrelanos@whonix.org>
