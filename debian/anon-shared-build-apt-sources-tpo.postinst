@@ -74,7 +74,7 @@ tpo_keys_add() {
    apt_source_key="/usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc"
    apt_target_key="/usr/share/keyrings/deb.torproject.org-keyring.gpg"
 
-   if test -f /usr/share/keyrings/deb.torproject.org-keyring.gpg ; then
+   if test -f '/usr/share/keyrings/deb.torproject.org-keyring.gpg' ; then
       printf '%s\n' "INFO: File '/usr/share/keyrings/deb.torproject.org-keyring.gpg' already exists, not overwriting, ok."
       return 0
    fi
@@ -93,7 +93,7 @@ case "$1" in
       true "INFO: Configuring $DPKG_MAINTSCRIPT_PACKAGE..."
 
       ## Doing this only once,
-      ## because when the user updates, the deb.torproject.org-keyring deb package is already
+      ## because when the user updates, the 'deb.torproject.org-keyring' deb package is already
       ## installed, which does a better job updating Tor Project's signing key.
       if [ ! -f "/var/lib/anon-dist/do_once/tpo_keys_add" ]; then
          tpo_keys_add
