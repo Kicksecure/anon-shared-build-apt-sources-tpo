@@ -83,7 +83,7 @@ tpo_keys_add() {
       return 0
    fi
 
-   cp --verbose -- "$apt_source_key" "$apt_target_key"
+   apt-key-install "$apt_source_key" "$apt_target_key"
 }
 
 true "
