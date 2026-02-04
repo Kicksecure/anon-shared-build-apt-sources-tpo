@@ -97,8 +97,8 @@ case "$1" in
       ## installed, which does a better job updating Tor Project's signing key.
       if [ ! -f "/var/lib/anon-dist/do_once/tpo_keys_add" ]; then
          tpo_keys_add
-         mkdir --parents "/var/lib/anon-dist/do_once"
-         touch "/var/lib/anon-dist/do_once/tpo_keys_add"
+         mkdir --parents -- "/var/lib/anon-dist/do_once"
+         touch -- "/var/lib/anon-dist/do_once/tpo_keys_add"
       fi
 
       true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
