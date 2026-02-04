@@ -88,7 +88,7 @@ tpo_keys_add() {
 
 true "
 #####################################################################
-## INFO: BEGIN: $DPKG_MAINTSCRIPT_PACKAGE $DPKG_MAINTSCRIPT_NAME $@
+## INFO: BEGIN: $DPKG_MAINTSCRIPT_PACKAGE $DPKG_MAINTSCRIPT_NAME $*
 #####################################################################
 "
 
@@ -118,7 +118,7 @@ true "INFO: Done with debhelper."
 
 true "
 #####################################################################
-## INFO: END  : $DPKG_MAINTSCRIPT_PACKAGE $DPKG_MAINTSCRIPT_NAME $@
+## INFO: END  : $DPKG_MAINTSCRIPT_PACKAGE $DPKG_MAINTSCRIPT_NAME $*
 #####################################################################
 "
 
