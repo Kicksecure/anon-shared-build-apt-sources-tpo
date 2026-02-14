@@ -13,6 +13,8 @@ set -e
 tpo_keys_add() {
   set -x
 
+  ## TODO: port to sequoia-pgp, extrepo-offline-data or deb.torproject.org-keyring
+
   ## The torproject archive key has been manually downloaded using the key fingerprint from
   ## https://www.torproject.org/docs/debian.html.en and https://www.torproject.org/docs/signing-keys.html.en
   ## using gpg:
