@@ -1,3 +1,9 @@
+commit 72ef47683118f9ff5de85ebbe11b37347f287983
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Feb 14 12:34:39 2026 +0000
+
+    bumped changelog version
+
 commit 2ef429baa78f5e1ac6170cd6191447a78d636e7d
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Feb 14 05:45:02 2026 -0500
@@ -51,7 +57,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Feb 4 06:03:44 2026 -0500
 
     Revert "drop `apt-install-key` because no longer necessary since APT nowadays has native `.asc` (gpg armored file) support"
-    
+
     This reverts commit bcea1c2f25b5cbc957a5342c6b72e4ff7a2763df.
 
 commit 4ff55cc6123a52a395c9871e2165f7c383a9d967
@@ -109,7 +115,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Jan 5 03:28:46 2026 -0500
 
     Merge pull request #1 from Nurmagoz/patch-1
-    
+
     Update torproject.sources link
 
 commit 35a42cd98533e3cf6039770f64566a0e0eb9fe28
@@ -201,7 +207,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Jul 18 12:34:54 2024 -0400
 
     Revert "update signing key"
-    
+
     This reverts commit 980f4caad418ff7b2887f33cbc452dfd915553a5.
 
 commit e051268f151dbc9ad374aa2a0a84052522d8d9fe
@@ -215,11 +221,11 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Jul 18 09:36:38 2024 -0400
 
     update signing key
-    
+
     source:
-    
+
     `cp /usr/share/keyrings/deb.torproject.org-keyring.gpg ./usr/share/anon-shared-build-apt-sources-tpo/tpoarchive-keys.d/torprojectarchive.asc`
-    
+
     from package `deb.torproject.org-keyring`
 
 commit 6f1a492dd40a33f174fffc1481d5b24214de7e10
@@ -233,7 +239,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Nov 11 13:41:32 2023 -0500
 
     change license to AGPL-3+
-    
+
     https://forums.whonix.org/t/license-change-to-agplv3/17455
 
 commit 12a46a55e1f8a6bb261900cc652562dca6558221
@@ -410,9 +416,9 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Nov 9 15:29:26 2021 -0500
 
     `/etc/apt/sources.list.d/torproject.list`: use APT `signed-by`
-    
+
     https://forums.whonix.org/t/apt-repository-signing-keys-per-apt-sources-list-signed-by/12302
-    
+
     https://support.torproject.org/apt/
 
 commit 123718f869ec3b757b2ec7f23f32bcf085ce122b
@@ -474,7 +480,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Apr 24 07:46:49 2021 -0400
 
     update comment to deb.torproject.org to onion v3
-    
+
     http://web.archive.org/web/20210421073511/http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/
 
 commit 74b936911a47b490a8302eaa4a29e3195bf7c234
@@ -506,7 +512,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Mar 11 14:25:57 2021 -0500
 
     stop using apt-key since deprecated
-    
+
     https://forums.whonix.org/t/apt-2-2-changes/11240/1
 
 commit 8c8b3114fcc70be0f0d516f6ff1021b12d51a890
@@ -712,18 +718,18 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Mar 1 14:31:48 2019 +0000
 
     add improved legal protections clauses
-    
+
     The license for software created by Whonix is the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version with additional terms applicable per GNU GPL version 3 section 7.
-    
+
     The additional terms are based on the Doom 3 license which is Debian refers to as `GPL-3+-with-id-software-additional-terms`, which is Debian DFSG [1] (The Debian Free Software Guidelines) approved and which is therefore suitable for Debian `main`. Whonix made applied minimal changes to it:
-    
+
     * Rewrite `The Doom 3 BFG Edition GPL Source Code` to the more common `this program` which is used throughout the GPL.
     * Added a "trump clause" [2], in other words, any conflicts or disputes between the additional terms and the GPLv3 shall be resolved in favor of the GPLv3 by adding `Notwithstanding any other provision of this License` (as mentioned in GPL FAQ [3]) at the beginning of the additional terms.
-    
+
     [1] https://www.debian.org/social_contract#guidelines
     [2] https://www.fsf.org/news/canonical-updated-licensing-terms
     [3] https://www.gnu.org/licenses/gpl-faq.html#v3Notwithstanding
-    
+
     For more considerations, see also:
     https://www.whonix.org/wiki/Dev/Licensing
 
@@ -755,7 +761,7 @@ Date:   Sun Jan 20 07:57:45 2019 +0000
     Looks more than a Debian policy reason. Debian implements apt-keys differently.
     Debian ships binary gpg files in folder '/etc/apt/trusted.gpg.d/'. The effort
     to create apt keys for folder '/etc/apt/trusted.gpg.d/' is high.
-    
+
     APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true
     export APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE
 
@@ -764,9 +770,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 20 07:53:44 2019 +0000
 
     disable deb-src by default
-    
+
     no longer required by default since no longer using from Whonix build script
-    
+
     https://phabricator.whonix.org/T721
 
 commit 7948da7d5c6e964455375499704851b3ca2cc21d
@@ -774,7 +780,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 20 07:42:38 2019 +0000
 
     https by default
-    
+
     https://phabricator.whonix.org/T721
 
 commit 7a8c76a51bf120a3d23061a9c30b775dcc3cf0cd
@@ -902,7 +908,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:49 2017 +0000
 
     remove faketime from Build-Depends:
-    
+
     since no longer used for reproducible builds
 
 commit 261c991711eb2a01e88ffe290faa4956cc256c6a
@@ -922,7 +928,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 15 10:42:26 2017 +0000
 
     add lintian override
-    
+
     anon-shared-build-apt-sources-tpo: package-installs-apt-sources
 
 commit eaa934a704ddc9c640e399f07c1a7307d9ff9550
@@ -984,14 +990,14 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 14 23:45:18 2016 +0000
 
     removed download of packages from deb.torproject.org
-    
+
     because using different implementation (uploading these packages to Whonix
     local / remote repository.
-    
+
     Not installing apt-during-apt and not installing these packages also ensures a
     smoother transition for existing Whonix versions where deb.torproject.org is to
     be disabled.
-    
+
     https://phabricator.whonix.org/T472
 
 commit ba4d76f2892e8956eda41535daded57065b60979
@@ -1005,7 +1011,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 13 16:55:33 2016 +0000
 
     more out commented by default repositories to ease testing
-    
+
     https://phabricator.whonix.org/T472
 
 commit 822ca719f783b66877c4c82f9433d2df926ace81
@@ -1013,7 +1019,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Apr 8 18:54:20 2016 +0000
 
     enabled deb-src so we can download source pages during build
-    
+
     https://phabricator.whonix.org/T472
 
 commit 3d40db670f0ef8ab69a379a1c35f69df860d1be0
@@ -1027,7 +1033,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 6 19:53:10 2016 +0000
 
     converted chroot scripts into postinst script
-    
+
     https://phabricator.whonix.org/T461
 
 commit 495fc4cf73392dc9b9fd7e780afb92eb16c32d80
@@ -1035,7 +1041,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jan 5 00:00:50 2016 +0000
 
     converted chroot-script 40_add_torprojects_key to postinst script
-    
+
     https://phabricator.whonix.org/T461
 
 commit 5f49829376707bf5e51f29492e09003e1b43d990
